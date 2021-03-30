@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+#Activar rewrite
+RewriteEngine on
+ErrorDocument 404 http://localhost/project-ia2/Error/error404
+ErrorDocument 500 http://localhost/project-ia2/Error/error500
+RewriteCond ${SCRIPT_FILENAME} !-d
+RewriteCond ${SCRIPT_FILENAME} !-f
+RewriteRule ^([a-zA-Z]*)/?([a-zA-Z0-9]*)?/?([0-9A-Za-z-_]*)$ index.php?controller=$1&action=$2&id=$3
+</IfModule>

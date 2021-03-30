@@ -1,0 +1,7 @@
+.idea/*
+.phpintel/*
+vendor/*
+/nbproject/private/
+/config/database.php
+/config/parameters.php
+/storage/preguntas
